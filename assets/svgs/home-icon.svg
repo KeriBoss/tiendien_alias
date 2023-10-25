@@ -1,0 +1,17 @@
+<svg id="Component_97_1" data-name="Component 97 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_25849" data-name="Rectangle 25849" width="24" height="24" fill="#949493"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_103" data-name="Mask Group 103" clip-path="url(#clip-path)">
+    <g id="home" transform="translate(1.444 0)">
+      <g id="Group_89050" data-name="Group 89050">
+        <path id="Path_135467" data-name="Path 135467" d="M22.286,9.386l-10-9.167a.834.834,0,0,0-1.144.016L1.7,9.4a.834.834,0,0,0-.253.6V23.167A.833.833,0,0,0,2.278,24H9.222a.833.833,0,0,0,.833-.833V17.056h3.889v6.111a.833.833,0,0,0,.833.833h6.944a.833.833,0,0,0,.833-.833V10A.834.834,0,0,0,22.286,9.386Zm-1.4,12.948H15.611V16.222a.833.833,0,0,0-.833-.833H9.222a.833.833,0,0,0-.833.833v6.111H3.111V10.352l8.628-8.374,9.15,8.388V22.333Z" transform="translate(-1.444 0)" fill="#949493"/>
+      </g>
+    </g>
+  </g>
+  <g id="Mask_Group_104" data-name="Mask Group 104" opacity="0" clip-path="url(#clip-path)">
+    <path id="home_1_" data-name="home (1)" d="M22.281,9.385l-10-9.169a.822.822,0,0,0-1.139.028L1.692,9.413a.757.757,0,0,0-.25.583v13.17A.819.819,0,0,0,2.275,24H9.221a.819.819,0,0,0,.834-.834V17.054h3.89v6.113a.819.819,0,0,0,.834.834h6.946a.819.819,0,0,0,.834-.834V10A.892.892,0,0,0,22.281,9.385Z" fill="#949493"/>
+  </g>
+</svg>

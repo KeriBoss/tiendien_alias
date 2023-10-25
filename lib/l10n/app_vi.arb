@@ -1,0 +1,11 @@
+{
+   "language": "Việt nam",
+   "@language": {
+    "description": "Ngôn ngữ hiện tại"
+   },
+
+   "loading": "Đang tải",
+   "@loading": {
+    "description": "Đang tải"
+   }
+}

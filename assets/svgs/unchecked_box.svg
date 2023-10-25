@@ -1,0 +1,11 @@
+<svg id="Component_3_2" data-name="Component 3 – 2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Rectangle_20" data-name="Rectangle 20" fill="#fff" stroke="#1b1a17" stroke-width="1">
+    <rect width="24" height="24" rx="5" stroke="none"/>
+    <rect x="0.5" y="0.5" width="23" height="23" rx="4.5" fill="none"/>
+  </g>
+  <g id="tick_2_" data-name="tick (2)" transform="translate(5.001 -60.997)" opacity="0">
+    <g id="Group_89034" data-name="Group 89034" transform="translate(0 67.997)">
+      <path id="Path_135407" data-name="Path 135407" d="M14.277,68.21a.724.724,0,0,0-1.025,0l-8.68,8.68L1.236,73.553A.724.724,0,0,0,.212,74.578L4.06,78.426a.725.725,0,0,0,1.025,0l9.192-9.192A.725.725,0,0,0,14.277,68.21Z" transform="translate(0 -67.997)"/>
+    </g>
+  </g>
+</svg>

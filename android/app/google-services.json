@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "764580115555",
+    "project_id": "tiendienalias",
+    "storage_bucket": "tiendienalias.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764580115555:android:330bd6dc9171f79498f456",
+        "android_client_info": {
+          "package_name": "com.example.tiendien_alias"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAy-BQ7nFbspTsrJf0E_kqlxhctI1O_0A8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

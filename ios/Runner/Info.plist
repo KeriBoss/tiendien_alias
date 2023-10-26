@@ -4,8 +4,18 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+		<key>NSCameraUsageDescription</key>
+    	<string>Chúng tôi cần bạn cho phép quyền sử dụng camera để chụp ảnh và tải lên.</string>
+    	<key>NSFaceIDUsageDescription</key>
+    	<string>Chúng tôi cần bạn sử dụng face id để bảo mật tài khoản của bạn</string>
+    	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    	<string>Chúng tôi cần bạn cho phép quyền vị trí  để truy xuất địa chỉ hiện tại của bạn</string>
+    	<key>NSLocationWhenInUseUsageDescription</key>
+    	<string>Chúng tôi cần bạn cho phép quyền vị trí  để truy xuất địa chỉ hiện tại của bạn</string>
+    	<key>NSPhotoLibraryUsageDescription</key>
+    	<string>Chúng tôi cần bạn cho phép quyền truy xuất thư viện , chọn ảnh và tải lên.</string>
 	<key>CFBundleDisplayName</key>
-	<string>Tiendien Alias</string>
+	<string>Bedding</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

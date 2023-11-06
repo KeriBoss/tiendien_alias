@@ -7,6 +7,7 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import 'package:sizer/sizer.dart';
+import 'package:tiendien_alias/LTD/lib/DiaLog.dart';
 import 'package:tiendien_alias/LTD/lib/Firebase/Firebase_Auth.dart';
 import 'package:tiendien_alias/LTD/lib/Models/DonHang.dart';
 import 'package:tiendien_alias/LTD/lib/Page/TraHang/danh_sach_lo/view.dart';
@@ -15,7 +16,7 @@ import 'package:tiendien_alias/LTD/lib/constants/color_palette.dart';
 
 import 'logic.dart';
 
-enum SampleItem { itemdangxuat, doimatkhau }
+enum SampleItem { itemdangxuat, doimatkhau, xoataikhoan }
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -90,6 +91,16 @@ class _HomePageState extends State<HomePage> {
                         Get.toNamed("/doimatkhau");
                       },
                     );
+                  },
+                ),
+                PopupMenuItem<SampleItem>(
+                  value: SampleItem.xoataikhoan,
+                  child: const Text('Xóa tài khoản'),
+                  onTap: () {
+                    DiaLog.showConfirmDialogYN(
+                        title: "Thông báo",
+                        content: "Bạn có chắc muốn xóa tài khoản này không?",
+                        accept: () {});
                   },
                 ),
               ],
@@ -414,6 +425,18 @@ class _HomePageState extends State<HomePage> {
                           ),
                           "Đăng xuất", () {
                         logOut(context);
+                      }),
+                      clickDrawer(
+                          Icon(
+                            Icons.delete,
+                            color: ColorPalette.primaryColor,
+                          ),
+                          "Xóa tài khoản", () {
+                        DiaLog.showConfirmDialogYN(
+                            title: "Thông báo",
+                            content:
+                                "Bạn có chắc muốn xóa tài khoản này không?",
+                            accept: () {});
                       }),
                     ],
                   )

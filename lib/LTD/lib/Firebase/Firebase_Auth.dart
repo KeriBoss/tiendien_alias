@@ -130,7 +130,7 @@ class FirebaseAuthen {
   // SignOut
   Future<void> signOut(BuildContext context) async {
     await _firebaseAuth.signOut();
-    Get.offAllNamed("/login");
+    Get.offAllNamed("/loginltd");
   }
 
   Future<void> passwordRest(String email, BuildContext context) async {

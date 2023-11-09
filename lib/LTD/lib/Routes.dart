@@ -26,11 +26,10 @@ import 'package:tiendien_alias/LTD/lib/them_don_hang/view.dart';
 
 class Routes {
   static const inital = "/login";
-
   static final routes = [
     GetPage(name: '/splashltd', page: () => SplashPageLTD()),
     GetPage(name: '/homeltd', page: () => HomePage()),
-    GetPage(name: '/loginltd', page: () => LoginPage()),
+    GetPage(name: '/loginltd', page: () => LoginLTDPage()),
     GetPage(name: '/quenmatkhaultd', page: () => QuenMatKhauPage()),
     GetPage(name: '/themdonhangltd', page: () => ThemDonHangPage()),
     GetPage(name: '/themdinhmucltd', page: () => ThemDinhMucPage()),

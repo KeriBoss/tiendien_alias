@@ -9,6 +9,7 @@ import 'package:tiendien_alias/LTD/lib/Page/danh_sach_don_hang/view.dart';
 import 'package:tiendien_alias/LTD/lib/Page/danh_sach_don_hang_theo_lo/view.dart';
 import 'package:tiendien_alias/LTD/lib/Page/danh_sach_nhan_vien/view.dart';
 import 'package:tiendien_alias/LTD/lib/Page/giao_gia_cong/view.dart';
+import 'package:tiendien_alias/LTD/lib/Page/login/view.dart';
 import 'package:tiendien_alias/LTD/lib/Page/quen_mat_khau/view.dart';
 import 'package:tiendien_alias/LTD/lib/Page/tao_user/view.dart';
 import 'package:tiendien_alias/LTD/lib/Page/them_dinh_muc/view.dart';
@@ -58,11 +59,12 @@ import '../pages/customer/transactionHistory/transactionHistoryPage.dart';
 import '../pages/splash/splash.dart';
 
 class Routes {
-  static const INITIAL = '/login';
+  //static const INITIAL = '/login';
+  static const INITIAL = '/loginltd';
 
   static final routes = [
     GetPage(name: '/welcome', page: () => WelcomePage()),
-    GetPage(name: '/login', page: () => LoginPage()),
+    GetPage(name: '/loginltd', page: () => LoginLTDPage()),
     GetPage(name: '/splash', page: () => const SplashPage()),
     GetPage(name: '/splashltd', page: () => const SplashPageLTD()),
     GetPage(

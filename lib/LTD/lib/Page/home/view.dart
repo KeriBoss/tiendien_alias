@@ -400,7 +400,7 @@ class _HomePageState extends State<HomePage> {
                             color: ColorPalette.primaryColor,
                           ),
                           "Thêm định mức", () {
-                        Get.toNamed("/themdinhmuc");
+                        Get.toNamed("/themdinhmucltd");
                       }),
                       clickDrawer(
                           Icon(
@@ -408,7 +408,7 @@ class _HomePageState extends State<HomePage> {
                             color: ColorPalette.primaryColor,
                           ),
                           "Bảng định mức", () {
-                        Get.toNamed("/bangdinhmuc");
+                        Get.toNamed("/bangdinhmucltd");
                       }),
                       clickDrawer(
                           const Icon(
@@ -446,7 +446,7 @@ class _HomePageState extends State<HomePage> {
                       color: ColorPalette.primaryColor,
                     ),
                     "Đăng nhập", () {
-                    Get.offAndToNamed("/login");
+                    Get.offAndToNamed("/loginltd");
                   }),
           )
         ],

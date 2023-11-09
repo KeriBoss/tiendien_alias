@@ -1,4 +1,3 @@
-import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tiendien_alias/LTD/lib/Page/register/view.dart';
@@ -6,7 +5,7 @@ import 'package:tiendien_alias/LTD/lib/validate/validate.dart';
 
 import 'logic.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginLTDPage extends StatelessWidget {
   final logic = Get.put(LoginLogic());
   @override
   Widget build(BuildContext context) {
@@ -17,10 +16,10 @@ class LoginPage extends StatelessWidget {
           child: Container(
             decoration: BoxDecoration(
                 // color: Colors.black.withOpacity(.1),
-                image: const DecorationImage(image: AssetImage("assets/images/bg1.jpg"),
-                  fit: BoxFit.cover,
-                )
-            ),
+                image: const DecorationImage(
+              image: AssetImage("assets/images/bg1.jpg"),
+              fit: BoxFit.cover,
+            )),
             child: Padding(
               padding: EdgeInsets.all(30),
               child: Column(
@@ -44,10 +43,14 @@ class LoginPage extends StatelessWidget {
       children: [
         Text(
           "Xin chào bạn!!",
-          style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold, color: Colors.white),
+          style: TextStyle(
+              fontSize: 40, fontWeight: FontWeight.bold, color: Colors.white),
         ),
         Text("Nhập tài khoản và mật khẩu của bạn để đăng nhập",
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white)),
+            style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.white)),
       ],
     );
   }
@@ -67,7 +70,10 @@ class LoginPage extends StatelessWidget {
                     borderSide: BorderSide.none),
                 fillColor: Theme.of(context).primaryColor.withOpacity(0.1),
                 filled: true,
-                prefixIcon: Icon(Icons.person, color: Colors.white,)),
+                prefixIcon: Icon(
+                  Icons.person,
+                  color: Colors.white,
+                )),
             validator: (value) => validatorText(value.toString()),
           ),
           SizedBox(height: 10),
@@ -81,15 +87,18 @@ class LoginPage extends StatelessWidget {
                   borderSide: BorderSide.none),
               fillColor: Theme.of(context).primaryColor.withOpacity(0.1),
               filled: true,
-              prefixIcon: Icon(Icons.password, color: Colors.white,),
+              prefixIcon: Icon(
+                Icons.password,
+                color: Colors.white,
+              ),
             ),
-            validator: (value) => validatorPassword(value.toString(),6),
+            validator: (value) => validatorPassword(value.toString(), 6),
             obscureText: true,
           ),
           SizedBox(height: 10),
           ElevatedButton(
             onPressed: () {
-              if(logic.key.currentState!.validate()){
+              if (logic.key.currentState!.validate()) {
                 logic.Login(context);
               }
             },
@@ -108,23 +117,35 @@ class LoginPage extends StatelessWidget {
   }
 
   _forgotPassword(context) {
-    return TextButton(onPressed: () {
-      Get.toNamed('/quenmatkhau');
-    }, style: TextButton.styleFrom(
-      foregroundColor: Colors.yellow,
-    ),
-        child: Text("Quên mật khẩu?",));
+    return TextButton(
+        onPressed: () {
+          Get.toNamed('/quenmatkhau');
+        },
+        style: TextButton.styleFrom(
+          foregroundColor: Colors.yellow,
+        ),
+        child: Text(
+          "Quên mật khẩu?",
+        ));
   }
 
   _signup(context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text("Bạn chưa có tài khoản ? " , style: TextStyle(fontSize : 19,color: Colors.white),),
-        SizedBox(width: 6,),
-        TextButton(onPressed: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context) => RegisterPage()));
-        }, child: Text("Đăng ký"),
+        Text(
+          "Bạn chưa có tài khoản ? ",
+          style: TextStyle(fontSize: 19, color: Colors.white),
+        ),
+        SizedBox(
+          width: 6,
+        ),
+        TextButton(
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => RegisterPage()));
+          },
+          child: Text("Đăng ký"),
           style: TextButton.styleFrom(
             foregroundColor: Colors.yellow,
           ),

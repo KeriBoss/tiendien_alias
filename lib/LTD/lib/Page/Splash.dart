@@ -44,7 +44,7 @@ class _SplashPageState extends State<SplashPageLTD> {
             //Get.toNamed("/homegiacongltd");
           }
         } else {
-          Get.to(LoginPage());
+          Get.to(LoginLTDPage());
         }
         // if(value['role']==3){
         //   Get.close(1);
@@ -57,7 +57,7 @@ class _SplashPageState extends State<SplashPageLTD> {
         // }
       });
     } else {
-      Get.to(LoginPage());
+      Get.to(LoginLTDPage());
     }
   }
 

@@ -1,15 +1,12 @@
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:sizer/sizer.dart';
 import 'package:tiendien_alias/constants/color_palette.dart';
 import 'package:tiendien_alias/constants/textstyle_ext.dart';
 import 'package:tiendien_alias/data/dummy_data.dart';
-import 'package:tiendien_alias/pages/DiaLog/diaLog.dart';
 import 'package:tiendien_alias/pages/forgot_password/forgot_password.dart';
+import 'package:tiendien_alias/pages/login/loginController.dart';
 import 'package:tiendien_alias/pages/login/loginPasswordPage.dart';
-import 'package:tiendien_alias/validator/validatorString.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:get/get.dart';
-import 'package:sizer/sizer.dart';
-import 'loginController.dart';
 
 class LoginPage extends StatelessWidget {
   var controller = Get.put(LoginController());
